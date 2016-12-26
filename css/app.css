@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+  background-color: #f7ffff; }
+
+.content {
+  width: 250px;
+  margin: 40vh auto 0;
+  transform: translateY(-50%); }
+
+.selection,
+.button {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  border: 1px solid #aaa; }
+
+.selection {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  outline: none;
+  text-align: center; }
+
+.button {
+  margin-top: 20px; }
+
+.table {
+  width: 100%;
+  line-height: 1.5;
+  margin: 20px 0;
+  border-collapse: collapse; }
+  .table th {
+    border-bottom: 1px solid #000; }
+  .table td {
+    padding: 10px;
+    vertical-align: top; }
+  .table .absent {
+    color: #cfcfcf; }
+
+/*# sourceMappingURL=app.css.map */

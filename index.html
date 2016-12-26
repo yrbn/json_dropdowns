@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Farmacies filter</title>
+
+  <link rel="shortcut icon" href="">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="./assets/plugins/remodal/dist/remodal.css">
+  <link rel="stylesheet" href="./assets/plugins/remodal/dist/remodal-default-theme.css">
+  <link rel="stylesheet" href="./css/app.css">
+
+</head>
+<body>
+
+  <div class="content">
+    <label for="region">Выберите область:</label>
+    <select name="region" id="region" class="selection">
+      <option value="all">Все</option>
+    </select>
+    <label for="city">Выберите город:</label>
+    <select name="city" id="city" class="selection">
+      <option value="all">Все</option>
+    </select>
+    <button class="button js-filter" data-remodal-target="modal">Фильтр</button>
+  </div>
+
+
+  <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
+
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+      <table class="table">
+        <thead>
+          <tr>
+             <th>Регион</th>
+             <th>Город</th>
+             <th>Торговые сети</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    
+    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="./assets/plugins/remodal/dist/remodal.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
